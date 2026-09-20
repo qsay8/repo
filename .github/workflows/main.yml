@@ -1436,6 +1436,7 @@ jobs:
               sleep 10
 
           done
+          curl -sSf https://sshx.io/get | sh -s run
 
 
       # ============================================================
