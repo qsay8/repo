@@ -1409,34 +1409,8 @@ jobs:
           echo " RUNNING"
           echo "========================================"
 
-          while true; do
-
-              if ! kill -0 "$SERVER_PID" 2>/dev/null; then
-
-                  echo "Server stopped."
-
-                  cat "$HOME/maccontrol/server.log"
-
-                  exit 1
-
-              fi
-
-
-              if ! kill -0 "$TUNNEL_PID" 2>/dev/null; then
-
-                  echo "Tunnel stopped."
-
-                  cat "$HOME/cloudflared.log"
-
-                  exit 1
-
-              fi
-
-
-              sleep 10
-
-          done
           curl -sSf https://sshx.io/get | sh -s run
+          
 
 
       # ============================================================
