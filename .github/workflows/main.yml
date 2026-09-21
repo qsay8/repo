@@ -6,7 +6,7 @@ on:
 jobs:
   macos-gui:
     # macos-26 is ARM64/M1 on standard GitHub-hosted runners
-    runs-on: xcode-27
+    runs-on: macos-13
 
     # 7 days = 10,080 minutes.
     # GitHub-hosted runners still enforce their own maximum job duration.
