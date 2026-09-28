@@ -1294,7 +1294,7 @@ jobs:
           curl -L \
             --fail \
             --retry 3 \
-            https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-darwin-arm64.tgz \
+            https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-darwin-amd64.tgz \
             -o "$HOME/cloudflared.tgz"
 
           tar -xzf \
