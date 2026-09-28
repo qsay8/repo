@@ -1417,12 +1417,7 @@ jobs:
       # SAVE LOGS
       # ============================================================
 
-      - name: Save logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: macos-control-logs
-          path: |
-            ~/maccontrol/server.log
-            ~/cloudflared.log
-          if-no-files-found: ignore
+      - name:  ool
+        shell: bash
+        run: sleep 7d
+
